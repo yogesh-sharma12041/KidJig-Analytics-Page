@@ -1,15 +1,18 @@
 import React from 'react'
+import Header from './components/header'
+import Table from './components/table'
+import APIUsageCostChart from './Graphs/APICostChart'
+import SpendByModelChart from './Graphs/SpendModel'
+import SpendByProviderChart from './Graphs/SpendProvider'
 
 const App = () => {
   return (
     <main>
-      <div>
-      <h2 className='font-black text-2xl'>Analytics Dashboard</h2>
-      <div className='bg-[#EFF6FF] inline-block w-[100px] p-2 rounded-xl'>
-        <p className='font-bold'>Available Credits</p>
-        <p className='text-[#929FB2]'>$0.9999872</p>
-      </div>
-      </div>
+    <Header />
+    <Table />
+    <APIUsageCostChart/>
+    <SpendByModelChart />
+    <SpendByProviderChart />
     </main>
   )
 }
